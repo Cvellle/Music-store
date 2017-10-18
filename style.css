@@ -1,0 +1,789 @@
+<style>
+  
+.header {
+    background-color: black;
+    width: 100%;
+}
+
+.title {
+    font: 2.6rem sans-serif;
+}
+
+.dropbtn {
+    background-color: brown; 
+    font-size: 100%;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: none;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: black;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding:none;
+    text-decoration: none;
+    outline:none;
+}
+
+.dropdown {
+    vertical-align:top;   
+    position: relative;
+    display: inline-block;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.dropdowncont {
+    overflow:hidden;
+    position:relative;
+    /* the container's height will determine the height of its slider  */
+    transition: 0.5s;
+    width:100px;
+    background-color: #f9f9f9;
+    opacity:0.7;
+}
+
+.slider {
+    max-height:100%;   
+	-webkit-transition:-webkit-transform .3s ease;
+       -moz-transition:   -moz-transform 3s ease;
+        -ms-transition:    -ms-transform .3s ease;
+            transition:        transform 1s;
+}
+
+.slider.opened { 
+    max-height:100%; 
+    background-color: #f9f9f9; 
+    height:100%; 
+    transform: translate(0, 0%);
+    width:100%;
+    transition: 0.3s;
+    opacity:1;
+}
+
+.s3.opened {
+	max-height:75%;
+}
+
+.s3.slider a {
+    font-size:100%;
+	height:50%;
+}
+
+.slider.closed { 
+    background-color: #f9f9f9; 
+    transform: translate(0, -100%);
+    height:0%;
+    opacity:0;transition: 0.3s all;
+}
+
+.slider {
+    width:100%;
+}
+
+.slider a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+    opacity:1;
+}
+
+.slider a:hover {
+  background-color: #f1f1f1
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    background-image: url('http://www.designed.rs/files/designed_users/211/Kulturforum-Poziv-02.jpg');
+    background-size:  100% 100%;
+    color: #ffffff;
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+    height:100%;
+    width:100%;
+}
+
+.text-center {
+/*     position:relative;
+    text-align: ; 
+    display:flex;
+    justify-content: center; */
+}
+
+h2 {
+    position:relative;
+    text-align: center;
+    display:flex;
+    font-family: Times, Sans-serif; 
+    opacity:0.5;
+    margin-left:auto;
+    margin-right:auto;
+    justify-content: center;
+}
+
+.centdiv{
+    justify-content: center;
+  }
+
+.overlay {     
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0, 0.9); 
+    overflow-x: hidden;
+    transition: 0.5s; 
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center; 
+    margin-top: 30px; 
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.link {
+    margin:17px; 
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    background-color: #333;
+}
+
+li.link {
+    padding:5px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.vidplayer {
+    background-color:black;
+}
+
+.videotext {
+	font: 1.6rem sans-serif;
+}
+
+
+@media only screen and (max-width: 385px) {
+   .colm-1 {width: 8.33%;}
+   .colm-2 {width: 16.66%;}
+   .colm-3 {width: 25%;}
+   .colm-4 {width: 33.33%;}
+   .colm-5 {width: 41.66%;}
+   .colm-6 {width: 50%;}
+   .colm-7 {width: 58.33%;}
+   .colm-8 {width: 66.66%;}
+   .colm-9 {width: 75%;}
+   .colm-10 {width: 83.33%;}
+   .colm-11 {width: 91.66%;}
+   .colm-12 {width: 100%;}
+
+  .header {
+    position:absolute;
+    height:20%;
+	margin-top:-2.5%;
+    margin-left:-2.5%;
+	width:102.5%;
+	background:black;
+  }
+  
+  .title {
+	position:relative;
+	margin-left:5%;
+	bottom:8%;
+  }
+  
+  div.nav {
+	margin-top:-2.5%;
+    position:relative;
+    top:-15%;
+    width:100%;
+  }
+ 
+  .dropdown {
+    display:block;
+    width:100%;
+    position:relative;  
+    max-height:150%;    
+  }
+  
+  .slider {
+    width:100%;
+  }
+
+  .dropbtn {
+    outline-style: solid;
+    outline-color:black;
+	width:100%;
+    height:45%;
+  }
+  
+  .dropbtn:active {
+    outline:none;
+	background:black;
+  }
+     
+  .dropdowncont {
+    position:relative;
+    width:100%;
+    max-height:100%;
+	opacity:0.9;
+  }
+  
+  .slider a {
+    poistion:absolute;
+	height:33%;
+  }
+  
+  .jumbotron {
+    position:absolute;
+    z-index:-1;
+    top:20%;
+    height:82.5%;
+	width:105%; 
+	margin-left:-5%;
+    margin-right:-;
+  }
+  
+  .t1{
+	position:absolute;  
+    color:white;	
+	font: 1.1rem sans-serif;
+	font-weight:600;
+	bottom:30%;
+	right:50%; 
+	transform:translateY(-150%) translateX(50%);
+	opacity:0.5;
+  }
+  
+  .t2{
+	position:absolute;  
+    color:white;	
+	font: 2.2rem sans-serif;
+	font-weight:600;
+	bottom:21%;
+	right:50%; 
+	transform:translateY(-85%) translateX(50%);
+	opacity:0.5;
+  }
+  
+  .t3{
+	position:absolute;  
+    color:white;	
+	font: 2.8rem sans-serif;
+	font-weight:600;
+	bottom:10%;
+	text-align:center;
+	right:50%; 
+	transform:translateY(-70%) translateX(50%);
+	opacity:0.5;
+  }
+  
+  .centdiv {
+    justify-content: center;
+  }
+  
+  .ifr {
+    margin:auto;
+  }
+    
+  .vidplayer {
+    position:absolute;
+    width:102.5%;
+	height:15%;
+    top:102.5%;
+	margin-left:-2.5%;
+  }
+  
+  .videobutton {
+	position:absolute;
+	top:50%;
+    transform:translateY(-50%) translateX(-50%);
+	left:50%;
+	height:80%;
+	width:25%;
+  }
+
+  .videotext {
+	position:absolute;  
+    color:brown;	
+	font: 1rem sans-serif;
+	font-weight:600;
+	bottom:-9%;
+	right:8%;
+  }
+  
+  .float-r {
+    float:left;
+  }
+  .footer{
+    position:absolute; 
+	width:100%;	
+	height:100%;
+    top:117.5%;
+  }
+  
+  .links {
+    position:absolute;
+    top:0%;
+    height:10%;
+    width:102.5%;
+	margin-left:-2.5%;
+	background:#333;
+  }
+  
+  .link {
+	transform:translateY(-5%);
+  }
+  
+  .contact {
+    position:absolute;
+    top:10%;
+    height:80%;
+    width:100%;
+  }
+  
+  .c1 {
+	position:absolute;
+    font: 0.9rem sans-serif;   
+    left:6%;
+    top:5%; 
+  }
+  
+  .c2 {
+	position:absolute;
+    font: 0.9rem sans-serif;   
+    left:6%;
+    top:9%; 
+  }
+  
+  .c3 {
+	position:absolute;
+    font: 0.9rem sans-serif;   
+    left:6%;
+    top:15%; 
+  }
+  
+  .c4 {
+	position:absolute;
+    font: 0.9rem sans-serif;   
+    left:6%;
+    top:19%; 
+  }
+  
+   .c5 {
+	position:absolute;
+    font: 0.9rem sans-serif;   
+    left:6%;
+    top:25%; 
+  }
+  
+  .c6 {
+	position:absolute;
+    font: 0.9rem sans-serif;   
+    left:6%;
+    top:29%; 
+  }
+  
+  .c7{
+	position:absolute;
+    font: 0.9rem sans-serif;   
+    left:6%;
+    top:35%;  
+  }
+  
+  .map {
+    position:absolute;   
+	top:50%;
+    height:53%;
+    width:85%;
+	margin:5%;
+	
+  }
+
+}
+
+
+@media only screen and (min-width: 385px) and (max-width: 768px) {
+  .col-1 {width: 8.33%; height:;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+   
+   
+  div.header {
+    width:100%;
+	background:black;
+  }
+  
+  h1 {
+    width:10%;  
+  }
+  
+  div.nav {
+    display:flex;
+    right:10%;    
+  }
+  
+  .dropdown{
+    align-items: center;
+    position:relative; 
+    max-height:100%;    
+  }
+  
+  .drpbtn {
+    font-size:100%;
+    width:5%;
+  }
+  
+  iframe.vid {
+    height:60%;
+    width:50%;
+  }
+  
+  .fl {
+    display:flex;
+  }
+  
+  .inl {
+    display:inline;
+  }
+   
+  
+  .jumbotron {
+    width:100%;
+  }
+  
+  .contact {
+    width:100%;
+    height:50%;
+  }
+  
+  footer {
+    width:cover;
+  }
+  
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .header {
+    position:absolute;
+    width:100%;
+	margin-left:-0.5%;
+	margin-top:-0.5%;
+    height:20%;
+	background-color: black;
+  }
+  .title {
+    position:relative;
+    margin-left:3%;
+	top:7%;
+}
+  
+  div.nav {
+    position:relative; 
+    bottom:15%;
+	width:30%;
+    left:63%;
+  }
+  
+  .dropdown {
+	position: relative;
+	width: 100px;
+  }
+  
+  .dropbtn {	
+    position:relative; 
+	width:100%;
+    height:30%;
+  }
+  
+  .rel {
+    position:relative;
+    overflow:hidden;
+  }
+  
+  .slider {
+    position:relative;
+    max-height:100%;
+  }  
+  
+  .dropdowncont {
+    position:absolute;
+	max-height:inherit;
+	background:transparent;
+    opacity:0.6;
+  }
+
+  .slider a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+    opacity:1;
+	background-color: #f9f9f9; 
+}
+  
+  .slider.closed {
+    position:relative;
+    min-height:0%;
+  }   
+  .slider.opened {
+    position:relative;
+    max-height:100%;
+  }
+
+  .jumbotron {
+    position:absolute;
+    top:20%;
+    margin-left:-0.5%;
+    width:100%;
+    height:80%;
+    z-index:-1;   	
+  }
+  
+  .t1,.t2,.t3{
+    opacity:0.3;
+  }
+  
+  .t1 {
+    position:absolute;
+    font: 4.6rem sans-serif;   
+    right:30%;
+    top:45%;
+  }
+  
+  .t2 {
+    position:absolute;
+    font: 10.6rem sans-serif;   
+    right:20%;
+    top:40%;
+  }
+  
+  .t3 {
+    position:absolute;
+    font: 7.6rem sans-serif;   
+    right:0%;
+    top:70%;
+  }
+  
+  .vidplayer {
+    position:absolute;
+	width:100%;
+	height:20%;
+    top:100%;
+	margin-left:-0.5%;
+  }
+   
+  .videobutton {
+	position:absolute; 
+	top:15%;
+	left:6.5%;
+	width:8%;
+	height:70%;
+	outline:none;
+	opacity:0.70;
+ } 
+ 
+  .videobutton:before {
+	position:absolute; 
+	content:"1.";
+	top:10%;
+	left:30%;
+	color:white;
+	font-size:5rem;
+	font-weight:700;
+	opacity:0.75;
+	z-index:2;
+	-webkit-text-stroke: 2px black;
+ } 
+ 
+  .videobutton:hover {
+	cursor:pointer;
+	transition:0.1s linear;
+	opacity:0.9;
+ } 
+  
+  .videotext {
+	position:absolute; 
+	bottom:23%;
+	left:1.5%;
+	color:brown;
+	max-width:2%;
+	font-size:1.1rem;
+	display:flex;
+	font-weight:600;
+	text-align:center;
+ }
+  
+  .youtube {
+    height:70%;
+    width:45%;
+    transform: translateY(-20%);   
+  }
+  
+  .footer {
+    position:absolute;
+    top:120%;
+    width:100%;
+    height:98%;
+  }  
+
+  .social {
+    position:absolute;
+    top:0%;
+    width:100%;
+    height:10%;
+    margin-left:-0.8%;
+  }  
+  
+   li.link {
+	position:relative;
+    padding:5px;
+	top:15%;
+	left:6%;
+   }
+  
+  .contact {
+    position:absolute;
+	top:20%;
+    height:74.5%;
+    width:100%;
+    top:50px;
+    background-color:white;
+	margin-top:10%;
+  }
+  
+  .map {
+    position:absolute;   
+	top:10%;
+    height:85%;
+    width:35%;
+    right:9%;
+    margin-top:-5%;
+  }
+  
+  .c1 {
+	position:absolute;
+    font: 1rem sans-serif;   
+    left:6%;
+    top:21%; 
+  }
+  
+  .c2 {
+	position:absolute;
+    font: 1rem sans-serif;   
+    left:6%;
+    top:26%; 
+  }
+  
+  .c3 {
+	position:absolute;
+    font: 1rem sans-serif;   
+    left:6%;
+    top:39%; 
+  }
+  
+  .c4 {
+	position:absolute;
+    font: 1rem sans-serif;   
+    left:6%;
+    top:44%; 
+  }
+  
+   .c5 {
+	position:absolute;
+    font: 1rem sans-serif;   
+    left:6%;
+    top:57%; 
+  }
+  
+  .c6 {
+	position:absolute;
+    font: 1rem sans-serif;   
+    left:6%;
+    top:70%; 
+  }
+  
+  .c7{
+	position:absolute;
+    font: 1rem sans-serif;   
+    left:6%;
+    top:75%;  
+  }
+  
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        
+    }
+}
+
+
+body{
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;    
+}
+
+</style>    
