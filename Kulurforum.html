@@ -1,8 +1,9 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> -->
 <html>
 
 <head>
-	
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
     <title>Diwanee</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,7 +11,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css" media="screen" />
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/temp/scripts/Vendor.js"></script>
 
@@ -18,398 +19,136 @@
 
 <body>
 
-<div>
-	
-	<img class="image" src="images/backgr.png"/>
-    <img class="mob-image" src="images/backgr-mob.png"/>
-	<img class="tab-image" src="images/backgr-tablet.png"/>
-	
-    <div class="centdiv rowm jumbotron"> 
-		<div class="menuButton">
-			<div class="menuL1"></div>
-			<div class="menuL2"></div>
-			<div class="menuL3"></div>			
-		</div>
-		<div class="menu">
-			<p id="button1">O NAMA</p>
-			<p id="button2">POSLOVI</p>
-			<p id="button3">KONTAKT</p>
-				<a href="https://www.facebook.com/diwaneeserbia"><img src="images/tw-nav.png"/></a>
-				<a href="https://twitter.com/diwaneeserbia?lang=en"><img src="images/fb-nav.png"/></a>
-			<p>PRATITE NAS</p>
-		</div>
-		<div class="menuDesktop">
-			<button class="b1" onclick="sroll1();">O NAMA</button>
-			<button class="b2" onclick="sroll2();">POSLOVI</button>
-			<button class="b3" onclick="sroll3();">KONTAKT</button>
-		</div>
-		<p class="title">DIWANEE SERBIA</p>
-		<pre class="titleT">DIWANEE SERBIA</pre>
-		<div class="line"></div>
-		<p></p>
-    </div>
-       
-    
-	<div class="mainL">
-	 
-		<div class="mainlink1">
-			<img src="images/triangle.png"/>
-			<p>DEVELOPMENT</p>
-			<div class="line"></div>
-			<div>
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
-			</div>
-			<pre class="pdiv1">
-Front-end Developers play a critical
-role in most projects at Code and 
-Theory. They are actively involved
-throughout the project lifecycle,
-often times starting with rapid pro-
-totypes early in the design phase.
-			</pre>
-			<pre class="pdivA">
-Front-end Developers play a critical role in most proj-
-ects at Code and  Theory. They are actively involved
-throughout the project lifecycle, often times starting
-		with rapid prototypes early in the design phase.			
-		 	</pre>
-		</div>
-	    <div class="mainlink2">
-	 		<img src="images/circle.png"/>
-			<p>WEB & UI DESIGN</p>
-			<div class="line"></div>
-			<div class="">
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
-			</div>
-			<pre class="pdiv2">
-Front-end Developers play a critical
-role in most projects at Code and 
-Theory. They are actively involved
-throughout the project lifecycle,
-often times starting with rapid pro-
-totypes early in the design phase.
-			</pre>
-			<pre class="pdivB">
-Front-end Developers play a critical role in most proj-
-ects at Code and  Theory. They are actively involved
-throughout the project lifecycle, often times starting
-			with rapid prototypes early in the design phase.				
-			</pre>
-		</div>
-		<div class="mainlink3">
-	 		<img src="images/rect.png"/>
-			<p>WORK IN TEAM</p>
-			<div class="line"></div>
-			<div class="">
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
-			</div>
-			<pre class="pdiv3">
-Front-end Developers play a critical
-role in most projects at Code and 
-Theory. They are actively involved
-throughout the project lifecycle,
-often times starting with rapid pro-
-totypes early in the design phase.
-			</pre>
-			<pre class="pdivC">
-Front-end Developers play a critical role in most proj-
-ects at Code and  Theory. They are actively involved
-throughout the project lifecycle, often times starting
-		with rapid prototypes early in the design phase.			
-			</pre>
-		</div>
-		 
+    <div class="black">                   
 	</div>
-		 
-	<div class="jobs">   
+    <div class="header">
+		<p class="title fl col-sm-4" style="color:white;">Kulturforum</p>                                   
+     
+		<div class="abs">
+		<div class="nav fl">             
+            <div class="dropdown">
+              <button id="toggle" class="dropbtn">Projekti</button>
+              <div class="dropdowncont">
+                <div class="slider closed">
+                  <a href="#">Aktuelni</a>
+                  <a href="#">Prošli</a>  
+                  <a href="#">Saradnja</a>  
+                </div>
+              </div>  
+            </div>
+         		 
+            <div class="dropdown">
+             <button id="togglee" class="dropbtn" onclick="toggleSlider(2);">O nama</button>
+              <div class="dropdowncont">
+               <div class="slider closed">
+                <a href="#">Rad</a>
+                <a href="#">Članovi</a>                    
+                <a href="#">Ideja</a> 
+                </div>   
+              </div> 
+           </div> 
            
-			<div class="looking">
-				<p>OTVORENE POZICIJE</p>
-				<p>POSLOVI</p>	
-				<div class="line"></div>
-				<pre id="look">
-We are always looking for
-motivated, multi-talented, and
-organized people to join our
-diverse team.
-			</pre>
-			<pre  id="look2" class="looking-tab">
-We are always looking for motivated, multi-talented, and organized
-people to join our diverse team.
-			</pre>
-			</div>	
+		   
+		    <div class="dropdown">
+              <button id="toggle" class="dropbtn dropbtnn">Kalendar</button>
+              <div class="dropdowncont d3">
+                <div class="slider closed s3">
+                  <a href="#">Izložbe</a>
+                  <a href="#">Radionice</a>
+                </div>
+              </div>  
+            </div>
+		   
+            <div class="dropdown">      
+               <button  class = "dropbtn" onclick="window.scrollBy(0, 2000);">Kontakt</button>
+               <div class="dropdowncont">
+					<div class="slider closed">
+					</div>
+			   </div>           
+            </div> 
+        </div> 
 			
-			<div class="frontend"> 
-				<p>FRONT-END DEVELOPER</p>
-				<p>Trazimo Front End Developera sa odlicnim poznavanjem i</p>
-				<p>iskustvom vise od godinudana u Drupalu.</p>
-				<pre>
-Trazimo Front End Developera sa odlicnim
-poznavanjem i iskustvom vise od godinu
-dana u Drupalu.
-				</pre>
-				<div class="skills1">
-					<div><p>#HTML</p></div>
-					<div><p>#CSS</p></div>
-					<div><p>#Java Script</p></div>
-				</div>
-				
-				<button>PRIJAVI SE</button>		
-			</div>
-								
-			<div class="projman">		
-				<p>PROJECT MANAGER</p>
-				<p>Trazimo Project Managera sa odlicnim organizacionim</p>
-				<p>sposobnostima i iskustvom u vodjenju digital projekata.</p>
-				<pre>
-Trazimo Project Managera sa odlicnim
-organizacionim sposobnostima i iskust-
-vom u vodjenju digital projekata.
-				</pre>
-				<div class="skills2">
-					<div><p>#HTML</p></div>
-					<div><p>#CSS</p></div>
-					<div><p>#Balsamiq</p></div>
-					<div><p>#UXpin</p></div>	
-				</div>
-				
-				<button>PRIJAVI SE</button>		
-			</div>
-			
-			<div class="designer">		
-				<p>UX/UI DESIGNER</p>
-				<p>Ako si kreativan i volis da radis u timu, posedujes visegodisnje</p>
-				<p>iskustvo iz oblasti dizajna, ux/ui...</p>
-				<pre>
-Ako si kreativan i volis da radis u timu,
-posedujes visegodisnje iskustvo iz oblasti
-dizajna, ux/ui...
-				</pre>
-				<div class="skills3">
-					<div><p>#Sketch</p></div>
-					<div><p>#AdobeXD</p></div>
-					<div><p>#Photoshop</p></div>
-					<div><p>#Balsamiq</p></div>
-				</div>	
-				
-				<button>PRIJAVI SE</button>		
-			</div>
-			
-			<div class="more">		
-				<button>UČITAJ JOŠ POZICIJA</button>		
-			</div>
-
+      </div>
     </div>
-	  
-	<div class="description">
-		<p>DIWANEE BEOGRAD</p>
-		<p>DIGITAL MEDIA COMPANY</p>
-		<pre id="preMain">
-  DIGITAL
-   MEDIA
-COMPANY
-		</pre>
-		<div class="line"></div>
-		<pre id="preMain1">
-Diwanee je digitalna medijska kom-
-panija okrenuta velikoj ženskoj
-publici na Bliskom istoku. Naša
-kompanija stvara i distribuira origi-
-nalan, visokokvalitetan i pouzdan
-sadržaj. Diwanee je takođe partner
-sa YouTube-om, i zajedno smo
-pokrenuli kanal "DUNIATI", nudeći
-na taj način sve vrste bogatog
-video sa držaja za arapske žene
-širom sveta.
 
-Radimo sa velikim brojem brendo-
-va, radi povećanja angažovanja, a
-sve u digitalnom prostoru. Diwanee
-je parner i sa velikim regionalnim
-vlasnicima medija, kako bismo up-
-ravljali svojom digitalnom prisut-
-nošću.
-				</pre>
-				
-				<pre id="preMainDesk">
-Diwanee je digitalna medijska kompanija okrenuta velikoj ženskoj publici na Bliskom istoku. Naša kompan-
-ija stvara i distribuira originalan, visokokvalitetan i pouzdan sadržaj. Diwanee je takođe partner sa You-
-Tube-om, i zajedno smo pokrenuli kanal "DUNIATI", nudeći na taj način sve vrste bogatog video sa držaja za
-arapske žene širom sveta.
-
-Radimo sa velikim brojem brendova, radi povećanja angažovanja, a sve u digitalnom prostoru. Diwanee je
-parner i sa velikim regionalnim vlasnicima medija, kako bismo upravljali svojom digitalnom prisutnošću.
-				</pre>
-		
-	</div>
-
-	<div class="follow"> 
-		<p>PRATITE NAS</p>
-		<div class="socialLinks">
-			<a href="https://twitter.com/diwaneeserbia?lang=en" target="_blank"><img src="images/twitter.png"></a>
-			<a href="https://www.facebook.com/diwaneeserbia/" target="_blank"><img src="images/facebook.png"></a>
-		</div>
-	</div>	
-	
-	<div class="contacts">
-	   
-			<div class="dubai">
-				<img src="images/location.png"/>
-				<p>DUBAI</p>
-				<pre>
-Office Park, Building Block A
-Units A301-A302
-Dubai Internet City
-T: 971 4 - 434 7147
-			    </pre>
-				<p>Office Park, Building Block A</p>
-				<p>Units A301-A302</p>
-				<p>Dubai Internet City</p>
-				<p>T: 971 4 - 434 7147</p>
+    <div class="centdiv rowm jumbotron">                               
+		<ul id="slides">
+			<li class="slide showing"></li>
+			<li class="slide"></li>
+			<li class="slide"></li>
+			<li class="slide"></li>
+		</ul>
+	    <div class="container">
+            <div class="row text-center">
+				<div class="t1">Ideje</div>
+				<div class="t2">na</div>
+				<div class="t3">izložbi</div>
 			</div>
-
-			<div class="beirut">
-				<img src="images/location.png"/>
-				<p>BEIRUT</p>
-				<pre>
-Dora, Seaside road,
-BCP bldg (Facing Demco Steel)
-961 76 - 866 700
-961 1 - 244 846
-			    </pre>
-				
-				<p>Dora, Seaside road,</p>
-				<p>BCP bldg (Facing Demco Steel)</p>
-				<p>Mobile: 61 76 - 866 700</p>
-				<p>Fax: 961 1 - 244 846</p>
-			</div>
-			
-			<div class="belgrade">
-				<img src="images/location.png"/>
-				<p>BELGRADE</p>
-				<pre>
-Resavska 33,
-11000 Beograd
-Tel: +381 11 - 3340117
-			    </pre>
-				<p>Resavska 33,</p>
-				<p>11000 Beograd</p>
-				<p>Tel: +381 11 - 3340117</p>
-			</div>
-
-			<div class="bottom">
-				<p class="copyright">COPYRIGHT @ 2015 DIWANEEE SERBIA ALL RIGHTS RESERVED</p>
-				<pre>COPYRIGHT @ 2015 DIWANEEE SERBIA</pre>
-				<div class="right">
-					<a href="https://www.linkedin.com/company/diwanee" class="link1"><img src="images/linkedin.png"/></a>
-					<a href="https://twitter.com/diwaneeserbia?lang=en" class="link2"><img src="images/twitter2.png"/></a>
-					<a href="https://www.linkedin.com/company/diwanee" class="link1mob"><img src="images/linkedin-mob.png"/></a>
-					<a href="https://twitter.com/diwaneeserbia?lang=en" class="link2mob"><img src="images/twitter2-mob.png"/></a>	
-					<p class="webAdr">www.diwanee.com</p>
-				<div>
-			</div> 
-			
-	</div>
-	   
-</div>			
-	
-		
-		
-		
-	<script>
-
-	const menButton = document.querySelector('.menuButton');
-menButton.addEventListener("click", toggleMenu);
-
-function toggleMenu() {
-	
-	this.nextElementSibling.style.transition="0.3s";
-/*
-    if (this.nextElementSibling.style.opacity=="0.985") {
-       this.nextElementSibling.style.opacity="0";
-	   this.nextElementSibling.style.display="none";
-      
-    } else {
-      this.nextElementSibling.style.opacity="0.985"
-	  this.nextElementSibling.style.display="visible";
-	}
-}
-*/
-
-
- if (this.nextElementSibling.style.display === "none") {
-        this.nextElementSibling.style.display = "block";
-    } else {
-        this.nextElementSibling.style.display = "none";
-    }
-	
-}
-
-
-
-
-
-$(".b1").click(function(){
-
-		$("html, body").animate({ scrollTop: $('.description').offset().top }, 1700);		
-
-	});
-	
-
-$(".b2").click(function(){
-
-		$("html, body").animate({ scrollTop: $('.looking').offset().top }, 1700);		
-
-	});
-
-$(".b3").click(function(){
-
-		$("html, body").animate({ scrollTop: $('.contacts').offset().top }, 1700);		
-
-	});
-
-
-	
-var ua = window.navigator.userAgent;
-var msie = ua.indexOf("MSIE ");
-
-if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) // If Internet Explorer, return version number
-
-	window.scrollBy(0, 2000);
-	
+		</div>  
+     </div>
+       
+     <div id="canvas" class="overlay">
+       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+         <iframe class="youtube" width="" height="" src="https://www.youtube.com/embed/WiEXFjJOevo" frameborder="0" allowfullscreen></iframe> 
+        </div>
+     </div>
+     
+     <div class="vidplayer">
+       <button class="float-r videobutton" onclick="openNav()" style="background-color:black;"><img style="width:80%; height:100%;" src="images/mov1.jpg"/></button>   
+       <p class="float-r videotext";">Video</p>
+     </div>   
   
-else { 
+ 	<div class="footer">
+	 
+        <div class="links"> 
+            <ul style="left:5px;" class="social inl">
+                <li style="margin:5px;" class="link inl"><a href="https://www.facebook.com/kulturforum.odkr" target="_blank"><img src="http://www.negaantiqueauto.com/Images/facebook_logo.png?ver08032015"  height="30px" width="30px"></a></li>
+                <li style="margin:5px;" class="link inl"><a href="https://www.instagram.com/kulturforum/" target="_blank"><img src="http://mexicaliburrito.com/images/MexiCali/instagram.png" height="30px" width="30px"></a></li>
+			</ul>
+	    </div>	   
+	 	 
+        <div class="fl contact">   
+            <iframe class="inl map" src="https://wego.here.com/directions/mix//Kulturforum,-Mihizova-11,-11000-Belgrade,-Serbia:e-eyJuYW1lIjoiS3VsdHVyZm9ydW0iLCJhZGRyZXNzIjoiTWloaXpvdmEgMTEsIDExMDAwIEJlbGdyYWRlLCBTZXJiaWEiLCJsYXRpdHVkZSI6NDQuODIxNDE0MjgwMjUxLCJsb25naXR1ZGUiOjIwLjQ3MDY0MzU5Mzk3OSwicHJvdmlkZXJOYW1lIjoiZmFjZWJvb2siLCJwcm92aWRlcklkIjo0OTc2NjI0ODM3MDYzOTd9?map=44.82141,20.47064,15,normal&fb_locale=en_US" width="100%" 
+                height="100%" scrolling:"yes">
+            </iframe>
+			
+			<div class="pitanje">
+				<p><b>Postavi pitanje:</b></p>
+				<div><input type="text" class="rect"></div>
+				<input class="subm" type="submit"/>
+			</div>
+			
+			
+			<div>
+				<img src="images/Miki.jpg" class="miki"/>
+				<img src="images/Mina.jpg" class="mina"/>
+				<img src="images/mail-icon.png" class="mail"/>
+				<p class="c1"><b>Generalni direktor</b></p>
+				<p class="c2">Miodrag Ninić -  tel: 0613215020</p>
+				<p class="c3"><b>Kreativni direktor</b></p>
+				<p class="c4">Mina Piščević - tel: 0642673310</p>
+				<p class="c5"><b>E-mail adresa:</b> kulturforum.odkr@gmail.com</p>
+				<p class="c6"><b>Adresa:</b> Mihizova 15</p>
+				<p class="c7"><b>Radno vreme:</b></p>
+				<p class="c8">Radnim danima:10-18h;</p>
+				<p class="c9">Subotom 12-16h;</p>
+				<img class="clock" src="images/clock-icon.png" class="kf2"/>				
 
-
-
-
+			</div>
+        </div>
+       
+    </div>
 	
-}
 
-	
-</script>	
-		
-		
-		
-		
+        
 </body>
-	  
-	  
-	  
             
-<script src="script.js"></script>
+<script src="js/script.js"></script>
   
 
 
 
 </html>
+
+
