@@ -1081,7 +1081,7 @@ li a, .dropbtn {
     position:absolute;
 	max-height:inherit;
 	background:transparent;
-    opacity:0.5;
+    opacity:0.3;
 	width:106%;
 	left:-3.5%;
   }
