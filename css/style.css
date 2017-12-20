@@ -16,7 +16,6 @@
 	height: 110%;
 	opacity: 0;
 	z-index: -3;
-
 	-webkit-transition: opacity 5s;
 	-moz-transition: opacity 5s;
 	-o-transition: opacity 5s;
@@ -283,8 +282,15 @@ li a, .dropbtn {
 	position:absolute; 
 	opacity:0.70;
 	border-radius:7%;
-	border:3px solid white;
- } 
+	border:none;
+	border-radius:30px;
+} 
+ 
+.videoImg {
+	width:80%;
+	height:100%; 
+	border-radius:2px;
+}
  
 .pitanje {
 	position:absolute; 
@@ -1164,13 +1170,12 @@ li a, .dropbtn {
    
   .videobutton {
 	position:absolute; 
-	top:15%;
-	left:6.5%;
+	top:20%;
+	left:5.2%;
 	width:8%;
-	height:70%;
+	height:60%;
 	outline:none;
-	opacity:0.70;
-	border-radius:7%;
+	opacity:0.70;	
  } 
 
   .videobutton:hover {
@@ -1194,7 +1199,7 @@ li a, .dropbtn {
  }
   
   .youtube {
-    height:70%;
+    height:60%;
     width:45%;
     transform: translateY(-20%);   
   }
