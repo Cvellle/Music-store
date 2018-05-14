@@ -67,6 +67,9 @@
 }
 
 .dropbtn {
+  display:flex;
+  align-items: center;
+  justify-content: center;
     background-color: black; 
     font-size: 100%;
     font-family:Futura, sans-serif;
@@ -83,16 +86,16 @@
     font-weight:600;
 }
 
-/* .dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover, .dropbtn:focus {
     background-color: white;
-    display: inline-block;
     color: black;
     text-align: center;
     padding:none;
     text-decoration: none;
     outline:none;
     opacity:1;
-} */
+    transition: 0.3s all;
+}
 
 .dropbtn:focus {
 	background-color: black; 
@@ -263,7 +266,10 @@ li {
 }
 
 li a, .dropbtn {
-    display: inline-block;
+  display:flex;
+    align-items: center;
+    justify-content: center;
+    /* display: inline-block; */
     color: white;
     text-align: center;
     text-decoration: none;
@@ -409,6 +415,9 @@ li a, .dropbtn {
   }
 
   .dropbtn {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     outline-style: solid;
     outline-color:black;
 	width:100%;
@@ -1441,6 +1450,9 @@ body{
   }
   
   .dropbtn {	
+    display:flex;
+    align-items: center;
+    justify-content: center;
     position:relative;
 	opacity:1; 
 	width:98%;
@@ -1455,7 +1467,7 @@ body{
 	border-bottom:2px solid white;
   }
   
-  /* .dropbtn:hover{
+  .dropbtn:hover{
     background-color: white;
     display: inline-block;
     color: black;
@@ -1466,7 +1478,7 @@ body{
     transform:scale(1.08,1.03);
     opacity:1;
 	font-size:108%;	
-} */
+}
  
   .rel {
     position:relative;
