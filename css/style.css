@@ -89,12 +89,12 @@
 .dropbtn:hover, .dropbtn:focus {
     background-color: white;
     color: black;
-    text-align: center;
+    /* text-align: center;
     padding:none;
     text-decoration: none;
     outline:none;
     opacity:1;
-    transition: 0.3s all;
+    transition: 0.3s all; */
 }
 
 .dropbtn:focus {
@@ -1469,16 +1469,15 @@ body{
   
   .dropbtn:hover{
     background-color: white;
-    display: inline-block;
     color: black;
-    text-align: center;
+    /* text-align: center;
     padding:none;
     text-decoration: none;
     outline:none;
     transform:scale(1.08,1.03);
     opacity:1;
-	font-size:108%;	
-}
+	font-size:108%;	*/
+} 
  
   .rel {
     position:relative;
