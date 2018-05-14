@@ -1178,11 +1178,11 @@ li a, .dropbtn {
 	opacity:0.70;	
  } 
 
-  /* .videobutton:hover {
+  .videobutton:hover {
 	cursor:pointer;
-	transition:0.1s linear;
+ /*	transition:0.1s linear;*/
 	opacity:0.9;
- }  */
+ }  
   
   .videotext {
 	position:absolute; 
