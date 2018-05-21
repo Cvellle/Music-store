@@ -159,6 +159,9 @@
 }
 
 .dropbtn {
+  /* display:flex; */
+  align-items: center;
+  justify-content: center;
     background-color: black; 
     font-size: 100%;
     font-family:Futura, sans-serif;
@@ -178,13 +181,13 @@
 
 .dropbtn:hover, .dropbtn:focus {
     background-color: white;
-    display: inline-block;
     color: black;
-    text-align: center;
+    /* text-align: center;
     padding:none;
     text-decoration: none;
     outline:none;
     opacity:1;
+    transition: 0.3s all; */
 }
 
 .dropbtn:focus {
@@ -356,7 +359,10 @@ li {
 }
 
 li a, .dropbtn {
-    display: inline-block;
+  display:flex;
+    align-items: center;
+    justify-content: center;
+    /* display: inline-block; */
     color: white;
     text-align: center;
     text-decoration: none;
@@ -509,6 +515,9 @@ li a, .dropbtn {
   }
 
   .dropbtn {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     outline-style: solid;
     outline-color:black;
 	  width:100%;
@@ -944,13 +953,18 @@ li a, .dropbtn {
 	opacity:0.70;
 	border-radius:7%;
  } 
+<<<<<<< HEAD
 
   .videobutton:hover {
+=======
+ 
+  /* .videobutton:hover {
+>>>>>>> d341eea1c32c51cdab0ad0e135c80cd85fa72c22
 	cursor:pointer;
 	transition:0.1s linear;
 	opacity:0.9;
  } 
-  
+   */
   .videotext {
 	position:absolute; 
 	bottom:30%;
@@ -1158,13 +1172,23 @@ li a, .dropbtn {
 @media only screen and (min-width: 768px) {
   .black {
 	position:absolute;
-	width:100%;
+	width:95%;
 	height:15%;
 	top:0%;
 	background:black;
 	opacity:0.8;
+<<<<<<< HEAD
 	margin-left:-0.5%;
   /* border-bottom: 0.1rem solid white; */
+=======
+	/* margin-left:-0.5%; */
+	/*box-shadow: 0px 0px 10px 6px #000;
+	-webkit-filter: blur(0.2);
+    -moz-filter: blur(0.2);
+    -o-filter: blur(0.2);
+    -ms-filter: blur(0.2);
+	filter: blur(2px);*/
+>>>>>>> d341eea1c32c51cdab0ad0e135c80cd85fa72c22
 	z-index:1;
   }
 
@@ -1249,7 +1273,7 @@ li a, .dropbtn {
 	background:transparent;
   }
   
-  .dropbtn:hover{
+  /* .dropbtn:hover{
     background-color: white;
     display: inline-block;
     color: black;
@@ -1263,8 +1287,12 @@ li a, .dropbtn {
 	  -webkit-transition:0.2s;
      -moz-transition:0.2s;
       -ms-transition:0.2s;
+<<<<<<< HEAD
     border-bottom:2px solid red;  
 }
+=======
+} */
+>>>>>>> d341eea1c32c51cdab0ad0e135c80cd85fa72c22
  
   .rel {
     position:relative;
@@ -1350,10 +1378,17 @@ li a, .dropbtn {
   
   .vidplayer {
     position:absolute;
+<<<<<<< HEAD
   width:20rem;
   height:20rem;
   top:133%;
   left:10%;
+=======
+	width:95%;
+	height:20%;
+    top:100%;
+	/* margin-left:-0.5%; */
+>>>>>>> d341eea1c32c51cdab0ad0e135c80cd85fa72c22
   }
    
   .videobutton {
@@ -1369,9 +1404,9 @@ li a, .dropbtn {
 
   .videobutton:hover {
 	cursor:pointer;
-	transition:0.1s linear;
+ /*	transition:0.1s linear;*/
 	opacity:0.9;
- } 
+ }  
   
   .videotext {
 	position:absolute; 
@@ -1404,9 +1439,9 @@ li a, .dropbtn {
   .social {
     position:absolute;
     top:0%;
-    width:100%;
+    width:95%;
     height:15%;
-    margin-left:-0.8%;
+    /* margin-left:-0.8%; */
   }  
   
    li.link {
@@ -1418,11 +1453,13 @@ li a, .dropbtn {
    }
   
   .contact {
-    position:absolute;
-	top:20%;
-    height:74.5%;
+  position:absolute;
+    /* left:-0.65%; */
+	  top:15%;
+    height:85%;
+    /* width:100.65%; */
     width:100%;
-    background-color:white;
+    background:white;
   }
   
   .map {
@@ -1632,6 +1669,9 @@ body{
   }
   
   .dropbtn {	
+    display:flex;
+    align-items: center;
+    justify-content: center;
     position:relative;
 	opacity:1; 
 	width:98%;
@@ -1648,16 +1688,15 @@ body{
   
   .dropbtn:hover{
     background-color: white;
-    display: inline-block;
     color: black;
-    text-align: center;
+    /* text-align: center;
     padding:none;
     text-decoration: none;
     outline:none;
     transform:scale(1.08,1.03);
     opacity:1;
-	font-size:108%;	
-}
+	font-size:108%;	*/
+} 
  
   .rel {
     position:relative;
