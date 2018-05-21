@@ -1238,10 +1238,10 @@ li a, .dropbtn {
   
   .contact {
   position:absolute;
-    left:-0.65%;
+    /* left:-0.65%; */
 	  top:15%;
     height:85%;
-    width:100.65%;
+    /* width:100.65%; */
     background:white;
   }
   
