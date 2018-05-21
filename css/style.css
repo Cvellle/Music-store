@@ -67,7 +67,7 @@
 }
 
 .dropbtn {
-  display:flex;
+  /* display:flex; */
   align-items: center;
   justify-content: center;
     background-color: black; 
@@ -975,12 +975,12 @@ li a, .dropbtn {
 @media only screen and (min-width: 768px) {
   .black {
 	position:absolute;
-	width:100%;
+	width:95%;
 	height:15%;
 	top:0%;
 	background:black;
 	opacity:0.8;
-	margin-left:-0.5%;
+	/* margin-left:-0.5%; */
 	/*box-shadow: 0px 0px 10px 6px #000;
 	-webkit-filter: blur(0.2);
     -moz-filter: blur(0.2);
@@ -1171,10 +1171,10 @@ li a, .dropbtn {
   
   .vidplayer {
     position:absolute;
-	width:100%;
+	width:95%;
 	height:20%;
     top:100%;
-	margin-left:-0.5%;
+	/* margin-left:-0.5%; */
   }
    
   .videobutton {
@@ -1223,9 +1223,9 @@ li a, .dropbtn {
   .social {
     position:absolute;
     top:0%;
-    width:100%;
+    width:95%;
     height:15%;
-    margin-left:-0.8%;
+    /* margin-left:-0.8%; */
   }  
   
    li.link {
