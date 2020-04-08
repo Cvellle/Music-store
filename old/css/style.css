@@ -255,7 +255,6 @@ header .hamburger > div {
   }
   .categories .flex-wrapper > * {
     margin-bottom: unset;
-    height: 15vw;
     flex: 0 1 calc(33.33% - 5vw);
     margin: 0 0 5vw 5vw;
   }
