@@ -43,7 +43,7 @@
 			flex: 1 1 100%;
 
 			@mixin atLarge {
-				flex: 1 1 0vw;
+				flex: 1 1 0%;
 				order: 2;
 			}
 		}      
