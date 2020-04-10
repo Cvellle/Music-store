@@ -1,7 +1,7 @@
 .flex-wrapper {
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
-  flex: 1 100%;
+  flex: 1 1 100%;
 
   &--spaceBetween {
     justify-content: space-between;

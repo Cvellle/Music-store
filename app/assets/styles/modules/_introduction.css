@@ -1,12 +1,13 @@
 .introduction {
 	display: flex;
-	flex-flow: row wrap;
 	padding: 3vw 3vw;
-    display: flex;
+	display: flex;
+	flex-flow: column nowrap;
     
     @mixin atLarge {
         display: flex;
-        justify-content: center;
+		justify-content: center;
+		flex-flow: row wrap;
         padding: 8vw 3vw 3vw;
     }
     
@@ -43,9 +44,10 @@
         }        
 		
 		&:nth-child(2) {
-			display: flex;
+			display: block;
 			flex: 1 1 100%;
 			box-sizing: content-box;
+			order: 1;
 
 			@mixin atLarge {
 				flex: 1 1 0%;
