@@ -18,20 +18,19 @@
     }
   
     .flex-wrapper {
-        flex: 1 1 100%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
+      flex: 1 1 100%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
 
-        @mixin  atLarge {
-            flex-flow: row wrap;
-            justify-content: space-between;
-            margin: 0 0 -5vw -5vw;
-        }
-      
-        > * {
+      @mixin  atLarge {
+          flex-flow: row wrap;
+          justify-content: space-between;
+          margin: 0 0 -5vw -5vw;
+      }
+    
+      > * {
         display: flex;
-        align-items: center;
         flex: 1 1 100%;
         margin-bottom: 3vw;
 

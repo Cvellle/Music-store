@@ -39,10 +39,10 @@
         }        
 		
 		&:nth-child(2) {
+			display: flex;
 			flex: 1 1 100%;
 
 			@mixin atLarge {
-				display: flex;
 				flex: 1 1 0vw;
 				order: 2;
 			}
