@@ -1,8 +1,8 @@
-/* .primary-nav {
+/* .header__nav {
 
   &--pull-right {
     @mixin atMedium {
-      float: right;
+      
     }
   }
 

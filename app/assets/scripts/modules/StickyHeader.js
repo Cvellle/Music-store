@@ -7,7 +7,11 @@ class StickyHeader {
   }
 
   events() {
-    // alert("s");
+    const navEl = document.querySelector(".header__nav");
+    const menuIcon = document.querySelector(".header__menu-icon");
+    
+    menuIcon.onclick = () => navEl.classList.toggle("opened");
+    
   }
 
 

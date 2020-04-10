@@ -44,7 +44,6 @@
         }        
 		
 		&:nth-child(2) {
-			display: block;
 			flex: 1 1 100%;
 			box-sizing: content-box;
 			order: 1;
