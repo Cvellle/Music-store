@@ -1,7 +1,7 @@
 .categories {
     display: flex;
     flex-wrap: wrap;
-    padding: 15vw 3vw;
+    padding: 18vw 3vw;
 
     @mixin  atLarge {
         padding: 5vw 3vw 8vw;

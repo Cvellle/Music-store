@@ -1,24 +1,23 @@
 .header {
+    position: fixed;
+    width: 100%;
     display: flex;
     flex: 1 100%;
     flex-flow: row wrap;
     padding: 0 3vw;
     height: 18vw;
     background-color: rgb(197, 171, 25);
+    z-index: 1;
       
     @mixin  atLarge {
+      position: relative;
       height: auto;
     }
     
     & > div > * {
       display: flex;
       align-items: center;
-      /* flex: 1 100%; */
       color: white;
-
-      @mixin  atLarge {
-        /* flex: 1 0; */
-      }
     }
       
     .header__logo {
@@ -52,7 +51,7 @@
       background: rgba(107, 107, 107, 0.863);
       left: 0vw;
       transform: translateX(-100%);
-      transition:1s all;
+      transition:1s transform;
       transition-timing-function: cubic-bezier(0,0,0.58,1);
 
       @mixin  atLarge { 
@@ -69,17 +68,22 @@
           
       a {
         font-size: 5vw;
-        line-height: 10vw;
+        line-height: 8vw;
         text-decoration: none;
         color: white;
         margin-right: auto;
         
         @mixin  atLarge {
           font-size: 1.5vw;
+          margin-bottom: 0;
         }
 
         &:not(:last-child) {
           margin-bottom: 5vw;
+          
+          @mixin  atLarge {
+            margin-bottom:unset;
+          }    
         }
       }
     }
