@@ -31,6 +31,9 @@
 				text-align: justify;
 
 				@mixin atLarge {
+					display: flex;
+  					flex-flow: row nowrap;
+  					align-items: center;
 					margin-bottom: 0vw;
 					padding-right: 6vw;
 					text-align: initial;
@@ -41,6 +44,7 @@
 		&:nth-child(2) {
 			display: flex;
 			flex: 1 1 100%;
+			box-sizing: content-box;
 
 			@mixin atLarge {
 				flex: 1 1 0%;
@@ -50,8 +54,10 @@
     }
     
 	img {
+		object-fit: contain;
 		width: 100%;
 		max-width: 100%;
+		max-height:100%;
 		height: auto;
         margin-bottom: 5vw;
         
