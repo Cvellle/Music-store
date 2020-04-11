@@ -2,26 +2,35 @@
 // import debounce from 'lodash/debounce'
 
 class StickyHeader {
-  constructor() {
-    this.events()
+    constructor() { 
+      this.navLinks = document.querySelectorAll(".header__nav > a")
+      this.menuIcon = document.querySelector(".header__menu-icon")  
+      this.navEl = document.querySelector(".header__nav")
+      this.headerEl = document.querySelector(".header")
+      this.headerChildren = document.querySelector(".header > *")
+      this.events()
   }
 
   events() {
-    const navEl = document.querySelector(".header__nav");
-    const menuIcon = document.querySelector(".header__menu-icon");   
-    const navLinks = document.querySelectorAll(".opened > a");
-
-    menuIcon.onclick = () => navEl.classList.toggle("opened"); 
-
-    navLinks.forEach(addEventListener("click", closeNav));
-    function closeNav(e) {
-      e.target.parentNode.classList.remove("opened");
-    }
-
-    // window.addEventListener("scroll", ()=> {});
+    window.addEventListener("scroll", () =>  this.navOnScroll());
+    this.navLinks.forEach(el => el.addEventListener("click", () => this.toggleNav()))
+    this.menuIcon.addEventListener("click", () => this.toggleNav())
   }
 
-  
+  toggleNav() {
+    this.navEl.classList.toggle("opened")
+  }
+
+  navOnScroll() {
+    if (window.scrollY > this.headerEl.offsetHeight * 2) {
+      this.headerEl.classList.add("smaller")
+      this.headerChildren.classList.add("adjusted")
+      this.headerEl.style.transition = "1s";    
+    } else {    
+      this.headerEl.classList.remove("smaller")     
+      this.headerChildren.classList.remove("adjusted")
+    }
+  }
 
 
 }

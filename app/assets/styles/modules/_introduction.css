@@ -1,12 +1,13 @@
 .introduction {
 	position: relative;
 	display: flex;
-	padding: 21vw 3vw 3vw;
+	margin-top: 18vw;
+	padding: 3vw 3vw 3vw;
 	display: flex;
 	flex-flow: column nowrap;
     
     @mixin atLarge {
-		padding-top: 10vw;
+		margin-top: 10vw;
         display: flex;
 		justify-content: center;
 		flex-flow: row wrap;
@@ -67,7 +68,7 @@
         margin-bottom: 5vw;
         
         @mixin atLarge {
-			max-width: 70vw;
+			/* max-width: 70vw; */
 			margin: 0;
         }
 	}

@@ -4,6 +4,7 @@
 @import "base/_global";
 @import "modules/_wrapper";
 @import "modules/_footer";
+@import "modules/_about";
 @import "modules/_categories";
 @import "modules/_introduction";
 @import "modules/_header";

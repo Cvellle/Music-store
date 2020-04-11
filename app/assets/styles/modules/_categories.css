@@ -4,7 +4,7 @@
     padding: 18vw 3vw;
 
     @mixin  atLarge {
-        padding: 5vw 3vw 8vw;
+      padding: 8vw 3vw 3vw;
     }
   
     h2 {
@@ -56,36 +56,6 @@ img {
         }
     }
 }
-  
-  /* // DESKTOP
-  @media only screen and (min-width: 1024px) {
-    .categories {
-      padding: 5vw 3vw 8vw;
-  
-      h2 {
-        margin-bottom: 5vw;
-      }
-  
-      .flex-wrapper {
-        flex-flow: row wrap;
-        justify-content: space-between;
-        margin: 0 0 -5vw -5vw;
-  
-        & > * {
-          margin-bottom: unset;
-          // height: 15vw;
-          flex: 0 1 calc(33.33% - 5vw);
-          margin: 0 0 5vw 5vw;
-  
-          img {
-            max-width: 100%;
-            height: 100%;
-            margin: auto;
-          }
-        }
-      }
-    }
-  } */
   
   
   /* // &:not(:nth-last-child(n+4)) {

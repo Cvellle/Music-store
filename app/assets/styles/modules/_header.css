@@ -1,19 +1,22 @@
 .header {
     position: fixed;
+    top:0;
     width: 100%;
     display: flex;
     flex: 1 100%;
     flex-flow: row wrap;
     padding: 0 3vw;
     height: 18vw;
-    background-color: rgb(197, 171, 25);
+    background-color: rgb(197, 171, 25, 1);
     z-index: 1;
       
     @mixin  atLarge {
-      position: relative;
       height: auto;
     }
     
+    & > * {
+      transition: 1s;
+    }
     & > div > * {
       display: flex;
       align-items: center;
@@ -30,7 +33,7 @@
         filter: invert(100%);
 
         @mixin  atLarge {
-          width: 5vw;
+          width: 4vw;
         }
       }
 
@@ -68,13 +71,13 @@
           
       a {
         font-size: 5vw;
-        line-height: 8vw;
+        line-height: 6.5vw;
         text-decoration: none;
         color: white;
         margin-right: auto;
         
         @mixin  atLarge {
-          font-size: 1.5vw;
+          font-size: 1.35vw;
           margin-bottom: 0;
         }
 
@@ -105,7 +108,7 @@
         
         @mixin  atLarge {
           margin-left: auto;
-          font-size: 2vw;
+          font-size: 1.5vw;
           margin-right: 0;
         }
         
@@ -136,68 +139,21 @@
         display: none;
       }
     }
+
+    
   }
   
-  
+  .smaller {
+    transition: 1s;
+    /* transform: translatey(-1vw); */
+    background-color: rgb(197, 171, 25, 0.7);
+  }
 
-   /*@media only screen and (min-width: 1024px) {
-  
-    header {
-      display: flex;
-      padding: 0 3vw;
-      height: 6vw;
-          font-size: 1.5vw;
-          
-      > * {
-        display: flex;
-        align-items: center;
-        color: white;
-          }
-          
-      .logo {
-        display: flex;
-        flex: 4 0;
-              order: 1;
-              
-        img {
-          width: 3vw;
-          cursor: pointer;
-          filter: invert(100%);
-        }
-          }
-          
-      nav {
-        display: flex;
-        flex: 4 0;
-        order: 1;
-              
-        a {
-          line-height: unset;
-          margin-left: 2vw;
-          text-decoration: none;
-          color: white;
-          font-size: 1.5vw;
-        }
-      }
-      .search {
-        display: flex;
-        justify-content: flex-end;
-        flex: 3 0;
-              order: 3;
-              
-        i {
-          font-size: 1.7vw;
-          cursor: pointer;
-          color: white;
-          margin-right: 0;
-        }
-      }
-      .hamburger {
-        display: none;
-      }
-      }
-     
-} */
+  .adjusted {
+    transition: 1s;
+    /* transform: translatey(0.5vw); */
+  }
+
 
   /* &--is-expanded {
 

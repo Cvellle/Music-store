@@ -4,7 +4,11 @@
 
   &--spaceBetween {
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+  }
+
+  &--column {
+    flex-direction: column;
   }
 
   &--columnSmall {
