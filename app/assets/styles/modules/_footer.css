@@ -7,7 +7,6 @@ footer {
   background: rgb(1, 1, 29);
   color: rgba(255, 255, 255, 0.712);
   font-size: 4vw;
-
   @mixin atLarge {
     padding: 0 3vw;
     height: unset;
@@ -18,30 +17,12 @@ footer {
     color: rgba(255, 255, 255, 0.712);
     font-size: 1.2vw;
   }
-
-  > div {
+  >div {
     display: flex;
     line-height: 10vw;
     justify-content: center;
-
     @mixin atLarge {
       align-items: center;
     }
   }
 }
-
-/* @media only screen and (min-width: 1024px) {
-  footer {
-    padding: 0 3vw;
-    height: unset;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: rgb(1, 1, 29);
-    color: rgba(255, 255, 255, 0.712);
-
-    > div {
-	  align-items: center;
-    }
-  }
-} */
