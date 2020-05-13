@@ -15,6 +15,7 @@ body {
 button, input {
 	border: 0;
 	outline: 0;
+	background-color: white;
 	&:active {
 		border: 0;
 		outline: 0;

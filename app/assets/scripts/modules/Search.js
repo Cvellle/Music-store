@@ -1,6 +1,7 @@
 class Search {
     constructor() {
         this.seacrhIcon = document.querySelector(".fa-search")
+        this.closeIcon = document.querySelector(".fa-close")
         this.formEl = document.querySelector("#searchForm")
         this.searchInput = document.querySelector("#searchForm input")
         this.events()
@@ -8,12 +9,25 @@ class Search {
 
     events() {
         this.seacrhIcon.addEventListener("click", () => this.toggleInput())
+        this.closeIcon.addEventListener("click", () => this.closeInput())
         this.seacrhIcon.addEventListener("click", (e) => this.showSearch(e))
         this.formEl.addEventListener("submit", (e) => this.showSearch(e))
     }
 
     toggleInput() {
-        this.searchInput.classList.toggle("visible")
+        let showCondition = this.searchInput.value.length === 0;
+        showCondition && (
+            this.closeIcon.classList.toggle("visible")
+        )
+        showCondition && (
+            this.searchInput.classList.toggle("visible")
+        )
+    }
+
+    closeInput() {
+        this.searchInput.classList.remove("visible")
+        this.closeIcon.classList.remove("visible")
+        this.searchInput.value = null;
     }
 
     showSearch(e) {
@@ -51,7 +65,7 @@ class Search {
             if (!strFound) alert("String '" + str + "' not found!")
             return;
         };
-        findString(this.searchInput.value);
+        this.searchInput.value.length > 0 && findString(this.searchInput.value);
         return false;
     }
 }

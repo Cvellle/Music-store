@@ -87,23 +87,26 @@
     display: flex;
     justify-content: flex-end;
     flex: 1 0;
+    & form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
     & input {
       display: none;
       margin-right: 5vw;
-      width: 50vw;
+      width: 45vw;
       height: 5.5vw;
       border-radius: 1.5vw;
       @mixin atLarge {
-        margin-right: 2vw;
+        margin-right: 1vw;
         width: 12vw;
         height: 1.5vw;
         border-radius: 0.3vw;
       }
     }
-    .visible {
-      display: flex;
-    }
-    i {
+    .fa-search {
+      display: inline-flex;
       font-size: 6vw;
       cursor: pointer;
       color: white;
@@ -113,9 +116,24 @@
         margin-right: 0;
       }
     }
+    .fa-close {
+      display: none;
+      font-size: 6vw;
+      cursor: pointer;
+      color: white;
+      margin-right: 3vw;
+      font-weight: 100 !important;
+      @mixin atLarge {
+        font-size: 1.7vw;
+        margin-right: 1vw;
+      }
+    }
     @mixin atLarge {
       flex: 3 0;
       order: 3;
+    }
+    .visible {
+      display: inline-flex;
     }
   }
   .header__menu-icon {
