@@ -87,14 +87,29 @@
     display: flex;
     justify-content: flex-end;
     flex: 1 0;
+    & input {
+      display: none;
+      margin-right: 5vw;
+      width: 50vw;
+      height: 5.5vw;
+      border-radius: 1.5vw;
+      @mixin atLarge {
+        margin-right: 2vw;
+        width: 12vw;
+        height: 1.5vw;
+        border-radius: 0.3vw;
+      }
+    }
+    .visible {
+      display: flex;
+    }
     i {
-      font-size: 5vw;
+      font-size: 6vw;
       cursor: pointer;
       color: white;
       margin-right: 5vw;
       @mixin atLarge {
-        margin-left: auto;
-        font-size: 1.5vw;
+        font-size: 1.7vw;
         margin-right: 0;
       }
     }
