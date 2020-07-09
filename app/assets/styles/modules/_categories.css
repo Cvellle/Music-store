@@ -65,8 +65,10 @@
                 }
                 &:hover {
                     transition: 0.3s;
-                    transform: scale(1.05);
                     opacity: 0.9;
+                    transform: scale(1.05) translate3d(0, 0, 0);
+                    -webkit-transform-style: preserve-3d;
+                    -webkit-backface-visibility: hidden;
                 }
             }
         }

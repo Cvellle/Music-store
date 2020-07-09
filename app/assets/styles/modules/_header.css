@@ -7,10 +7,12 @@
   flex-flow: row wrap;
   padding: 0 3vw;
   height: 18vw;
-  background-color: rgb(197, 171, 25, 1);
+  background-color: rgb(197, 151, 25);
+  box-shadow: 0px 1vw 0vw rgba(236, 187, 27, 0.39), 0px 2vw 0vw rgba(230, 192, 25, 0.479);
   z-index: 1;
   @mixin atLarge {
     height: auto;
+    height: 8vw;
   }
   &>* {
     transition: 1s;
@@ -158,6 +160,7 @@
 .smaller {
   transition: 1s;
   background-color: rgb(197, 171, 25, 0.7);
+  box-shadow: 0px 0vw 0px rgba(236, 187, 27, 0.39), 0px 0vw 0vw rgba(230, 192, 25, 0.479);
 }
 
 .adjusted {
