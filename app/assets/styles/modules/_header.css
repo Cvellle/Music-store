@@ -70,9 +70,14 @@
       text-decoration: none;
       color: white;
       margin-right: auto;
+      transition: 0.3s;
       @mixin atLarge {
         font-size: 1.35vw;
         margin-bottom: 0;
+      }
+      &:hover {
+        transition: 0.3s;
+        color: rgb(173, 56, 1);
       }
       &:not(:last-child) {
         margin-bottom: 5vw;
