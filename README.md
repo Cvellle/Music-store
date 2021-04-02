@@ -10,7 +10,7 @@ Site
 
 **2.** **Bem** (block-element-modifier)
 
-**3.** **ES6 class** - Grid, Box, Dialog
+**3.** **ES6 class** - JavaScript modules imported and invoked in the main App.js file
 
 **4.** **Babel**
 
